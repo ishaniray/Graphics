@@ -6,8 +6,8 @@
 #include <math.h>
 
 /* Macros */
-#define fx(x) (getmaxx() / 2 + x)       /* puts origin at the centre of the window... */
-#define fy(y) (getmaxy() / 2 - y)       /* ...instead of at the top-left corner */
+#define TRUE 1
+#define FALSE 0
 #define WHITE 15   /* colour code */
 
 /* Structure definition */
@@ -46,13 +46,13 @@ int main(void)
 /* Function implementing Bresenham's line-drawing algorithm */
 void bresenham(Point initial, Point final)
 {
-     int delX, delY, xInc, yInc, steepSlope = 0, decParam;
+     int delX, delY, xInc, yInc, steepSlope = FALSE, decParam;
      
      delX = abs(final.x - initial.x);     /* delta-x */
      delY = abs(final.y - initial.y);     /* delta-y */
      
      if(delY > delX)
-             steepSlope = 1;
+             steepSlope = TRUE;
      
      /* Checking if initial x, y values are to be gradually incremented or decremented to reach the final point */
      if(final.x > initial.x)
