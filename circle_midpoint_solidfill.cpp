@@ -32,7 +32,7 @@ int main(void)
 
     radius = 180;
     
-    initwindow(1280, 720);    /* window size: 640 by 480 pixels */
+    initwindow(1280, 720);    /* window size: 1280 by 720 pixels */
     
     midpointcircle(radius);    /* circle is drawn */
     
