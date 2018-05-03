@@ -1,7 +1,6 @@
 /* This program draws continuous cubic Bezier curves. 
    (All inputs are hardcoded.) */
 
-#include <stdio.h>
 #include <graphics.h>
 #include <math.h>
 
