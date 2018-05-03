@@ -2,7 +2,6 @@
    (All inputs are hardcoded.) 
    [Refer to curve_cubicbezier_cont.cpp for a much-refined, properly documented implementation of cubic Bezier curves.] */
 
-#include <stdio.h>
 #include <graphics.h>
 #include <math.h>
 
