@@ -96,5 +96,8 @@ void  midpoint_ellipse(int a, int b, Point centre)
           }
           
           delay(10);
-      }      
+      }
+        
+      putpixel(initial.x + centre.x, initial.y + centre.y, LIGHTRED);    /* plot the pixel at (a, 0) */
+      putpixel(-initial.x + centre.x, initial.y + centre.y, YELLOW);    /* reflect point in second quadrant */
 }
