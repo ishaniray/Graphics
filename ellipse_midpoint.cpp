@@ -57,7 +57,7 @@ void  midpoint_ellipse(int a, int b, Point centre)
           putpixel(-initial.x + centre.x, -initial.y + centre.y, LIGHTGREEN);    /* reflect point in third quadrant */
           putpixel(initial.x + centre.x, -initial.y + centre.y, CYAN);    /* reflect point in fourth qudrant */
           
-          if(decParam < 1)
+          if(decParam < 0)
           {
               initial.x = initial.x + 1;   /* only increment x */
               decParam = decParam + (2 * pow(b, 2) * initial.x) + pow(b, 2);    /* update decision parameter */
@@ -83,7 +83,7 @@ void  midpoint_ellipse(int a, int b, Point centre)
           putpixel(-initial.x + centre.x, -initial.y + centre.y, LIGHTGREEN);    /* reflect point in third quadrant */
           putpixel(initial.x + centre.x, -initial.y + centre.y, CYAN);    /* reflect point in fourth qudrant */
           
-          if(decParam < 1)
+          if(decParam < 0)
           {
               initial.x = initial.x + 1;    /* increment x */
               initial.y = initial.y - 1;    /* increment y */
